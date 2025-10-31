@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*  altura total da tela */
+    padding: 0;
+  }
+  
+  .topo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .icone {
+    width: 25px;
+    vertical-align: middle;
+  }
+  
+  .aumigo {
+    color: #ffd000;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .subtitulo {
+    display: block;
+    font-size: 1rem;
+    color: #f49ac2;
+    margin-top: -5px;
+  }
+  
+  /* card princi */
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: stretch;
+    width: 90%;
+    max-width: 1100px;
+    height: 70vh; /* altura tela */
+    overflow: hidden;
+  }
+  
+  /* cibele */
+  .imagem {
+    flex: 1.2;
+  }
+  
+  .imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* infromacoes */
+  .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 40px;
+  }
+  
+  .nome {
+    color: #ffdd00;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .idade {
+    color: #ffe600;
+  }
+  
+  .descricao {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .local p {
+    margin: 4px 0;
+    font-size: 1rem;
+  }
+  
+  .titulo-historia {
+    color: #f36ba0;
+    margin-top: 20px;
+  }
+  
+  .texto-historia {
+    margin-top: 8px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .mensagem {
+    background-color: #fde7ef;
+    color: #f36ba0;
+    border-radius: 15px;
+    padding: 10px 15px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .botao {
+    margin-top: 25px;
+    background-color: #f36ba0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .botao:hover {
+    background-color: #EECA06;
+  }
+  
+  /* modo responsivo */
+  @media (max-width: 900px) {
+    .card {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .imagem img {
+      height: 300px;
+    }
+  
+    .info {
+      padding: 20px;
+    }
+  }
