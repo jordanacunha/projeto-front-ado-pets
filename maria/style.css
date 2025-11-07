@@ -62,8 +62,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
-  /* === INFORMAÇÕES === */
+
   .info {
     flex: 1;
     display: flex;
